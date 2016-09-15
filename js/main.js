@@ -1,13 +1,3 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
 (function() {
 
 	var support = { animations : Modernizr.cssanimations },
@@ -86,3 +76,33 @@
 	init();
 
 })();
+
+
+function mobileMenu(maxWidth) {
+    var maxWidth = maxWidth || 420;
+    $('.menuButton').click(function() {
+        $('.menu').toggleClass('open');
+        $('.menuContent').stop().slideToggle(400);
+    });
+
+    $(document).bind('click.menu', function(e) {
+        if ($(e.target).closest('.menu').length === 0 && window.screen.width <= maxWidth) {
+            $('.menuContent').stop().slideUp(400);
+            $('.menu').removeClass('open');
+        }
+    });
+
+    $(window).resize(function(){
+        if (window.screen.width > maxWidth ) {
+            $('.menuContent').removeAttr('style');
+            $('.menu').removeClass('open');
+        }
+    });
+
+};
+
+/* DOCUMENT READY  */
+$(document).ready(function() {
+    mobileMenu(700);
+    
+});
