@@ -105,4 +105,15 @@ function mobileMenu(maxWidth) {
 $(document).ready(function() {
     mobileMenu(700);
     
+    $('.top-slider').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 1000,
+	  slidesToShow: 1,
+	  adaptiveHeight: true,
+	  // autoplay: true,
+  	//   autoplaySpeed: 4000,
+	});
+
+
 });
