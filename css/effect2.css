@@ -179,6 +179,7 @@
 
 .loaded .ip-logo img{
 	max-width: 150px;
+	margin-top: -40px;
 }
 
 .loading .ip-logo {
