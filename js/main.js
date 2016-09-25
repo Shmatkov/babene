@@ -98,8 +98,8 @@ function mobileMenu(maxWidth) {
             $('.menu').removeClass('open');
         }
     });
-
 };
+
 
 
 /* DOCUMENT READY  */
@@ -113,7 +113,7 @@ $(document).ready(function() {
 	  slidesToShow: 1,
 	  adaptiveHeight: true,
 	  // autoplay: true,
-  	//   autoplaySpeed: 4000,
+  	  // autoplaySpeed: 4000,
 	});
 
 

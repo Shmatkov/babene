@@ -38,16 +38,18 @@
                 <button class="menuButton" type="button"><span class="menuIcon"></span></button>
                 <div class="menuContent">
                     <ul class="menuList">
-                        <li class="menuListItem"><a href="#" class="menuLink">HOME</a></li>
-                        <li class="menuListItem"><a href="#" class="menuLink">PRODUCT</a></li>
+                        <li class="menuListItem"><a href="index.html" class="menuLink active">HOME</a></li>
+                        <li class="menuListItem"><a href="products.html" class="menuLink">PRODUCT</a></li>
                         <li class="menuListItem"><a href="#" class="menuLink">ABOUT</a></li>
                         <li class="menuListItem"><a href="#" class="menuLink">CONTACT</a></li>
                         <li class="menuListItem"><a href="#" class="menuLink">NEWS</a></li>
                     </ul>
                 </div>
             </nav>
+
             <!-- Trigger/Open The Modal -->
-			<button id="myBtn">Open Modal</button>
+			<button id="myBtn" style="display:none; opacity:0;">Open Modal</button>
+            <!-- Trigger/Open The Modal -->
 
             <div class="lang">
             	<a href="#" class="lang-link active">ENG</a> / <a class="lang-link" href="#">УКР</a>
@@ -205,8 +207,8 @@
 			<section class="footer">
 				 <div class="menuContent">
                     <ul class="menuList">
-                        <li class="menuListItem"><a href="#" class="menuLink">HOME</a></li>
-                        <li class="menuListItem"><a href="#" class="menuLink">PRODUCT</a></li>
+                        <li class="menuListItem"><a href="index.html" class="menuLink">HOME</a></li>
+                        <li class="menuListItem"><a href="products.html" class="menuLink">PRODUCT</a></li>
                         <li class="menuListItem"><a href="#" class="menuLink">ABOUT</a></li>
                         <li class="menuListItem"><a href="#" class="menuLink">CONTACT</a></li>
                         <li class="menuListItem"><a href="#" class="menuLink">NEWS</a></li>
@@ -256,10 +258,12 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+setTimeout(function(){ modal.style.display = "block";}, 5000);
 </script>
 		</div>
 		<!-- /container -->
-		<script type="text/javascript" src="js/jquery-1.10.2.min.js?ver=4.4.2"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/pathLoader.js"></script>
 		<script src="js/main.js"></script>

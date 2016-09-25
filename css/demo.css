@@ -269,6 +269,59 @@ section {
 
 }
 
+
+/*breadcrums*/
+.breadcrumb {
+    padding: 20px 0;
+    margin: 0;
+    list-style: none;
+    background-color: #fff;
+
+}
+
+.breadcrumb::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+.breadcrumb-item a{
+    color:#000;
+    opacity: 0.5;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #000;
+    opacity: .5;
+    content: "/"
+}
+
+.breadcrumb-item+.breadcrumb-item:hover::before {
+    text-decoration: underline
+}
+
+.breadcrumb-item+.breadcrumb-item:hover::before {
+    text-decoration: none
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item a:hover {
+    color: #000;
+    opacity: 1;
+}
+/**/
+
 /*slider*/
 .top-slider {z-index: 2;}
 .top-slider img{ width: 100%; height: auto;}
@@ -591,6 +644,205 @@ a.black-url:hover{
 }
 
 
+/*products*/
+
+
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  /* -webkit-transition-property: -webkit-transform, opacity; */
+  -moz-transition-property:    -moz-transform, opacity;
+  -ms-transition-property:     -ms-transform, opacity;
+  -o-transition-property:      -o-transform, opacity;
+  /* transition-property:         transform, opacity; */
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+#options {
+  padding-bottom: 1.0em;
+}
+
+#options h3 {
+  margin-bottom: 0.2em;
+  font-size: 15px;
+}
+
+#options h4 { 
+  font-weight: bold;
+}
+
+#options ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#options ul ul {
+  margin-left: 1.5em;
+}
+
+#options li {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+
+}
+#options li a {
+  display: block;
+  padding: 0;
+  color: #000;
+  width: 100px;
+  text-align: center;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: 0;
+  border-bottom: 1px solid #fff;
+}
+
+#options li a:hover,
+#options li a:active,
+#options li a.selected {
+  border-bottom: 1px solid #000;
+}
+
+/* Combination filter options*/
+
+#options .option-combo {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+
+#options .option-combo ul {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+#options .option-combo h2,
+#options .option-combo h4 {
+  line-height: 34px;
+  margin-bottom: 0;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*products*/
+
+.prod-text{
+    z-index: 2;
+    text-align: center;
+    width: 60%;
+    color: #000;
+    position: absolute;
+    bottom: 25%;
+}
+
+.prod-text .text {
+    text-align: center;
+}
+
+.element {
+  width: 45%;
+  height:auto;
+}
+.element a{
+    display: block;
+    position: relative;
+    z-index: 4;
+}
+
+.element a img{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.element a:before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background: orange;
+    z-index: 2;
+    width: 80%;
+    height: 80%;
+    border-bottom: 1px solid orange;
+    border-right: 1px solid transparent;
+}
+
+/*products*/
+
+.page-bg img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1600px) {
 
 .block-25 img {width: 90%}
@@ -627,15 +879,11 @@ a.black-url:hover{
 }
 
 @media screen and (max-width: 1360px) {
-	
-
 
 }
 
 @media screen and (max-width: 1280px) {
 .ingridient-big .text { padding: 5% 3%; }
-
-
 
 }
 
@@ -647,8 +895,8 @@ a.black-url:hover{
 .ingridient.ingridient-2 { margin-left: -30%; }
 .lang {top: 140px; right: 5%;}
 
-
 }
+
 @media screen and (max-width: 1023px) {
 .cooking-title, .cooking-text { display: block; width: 50%; margin: 0 auto; }
 .cooking-text { width: 100% }
@@ -672,6 +920,7 @@ a.black-url:hover{
 .ingridient-desc .mini-title { padding: 0 3%;; text-align: left;}
 .lang { top: 3%;  right: 5%; }
 }
+
 @media screen and (max-width: 767px) {
 .second-block {width: 100%;max-height: 800px; min-width: auto; }
 .cooking { padding: 14% 0;  width: 100%;  margin: 10% 0 0; }
