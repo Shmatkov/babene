@@ -34,7 +34,6 @@
 	margin: 0;
 }
 
-.ip-logo,
 .ip-loader {
 	position: absolute;
 	left: 0;
@@ -45,10 +44,16 @@
 }
 
 .ip-logo {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+
 	top: 0;
 	height: 100%;
 	-webkit-transform: translate3d(0,25%,0);
 	transform: translate3d(0,25%,0);
+
 }
 
 .ip-loader {
@@ -70,8 +75,11 @@
 	height: auto;
 }
 
-.loaded .ip-header .ip-logo svg {
-	max-height: 300px;
+.loaded .ip-header .ip-logo  {
+	visibility: hidden;
+}
+.loaded .ip-inner  {
+	visibility: visible;
 }
 
 .ip-header .ip-logo svg path {
