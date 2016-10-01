@@ -296,6 +296,7 @@ section {
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
+    text-transform: uppercase;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -315,7 +316,7 @@ section {
     text-decoration: none
 }
 
-.breadcrumb-item.active,
+.breadcrumb-item.active a,
 .breadcrumb-item a:hover {
     color: #000;
     opacity: 1;
@@ -970,8 +971,6 @@ a.black-url:hover{
         -moz-animation-delay:1.35s;
 }
 
-
-
 @keyframes bounce_circleG{
     0%{}
 
@@ -1031,166 +1030,96 @@ a.black-url:hover{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1600px) {
-
-.block-25 img {width: 90%}
-.ingridient.ingridient-2 {  margin-left: -65%; }
+/*one product*/
+.prod-info .sub-title{
+    margin-top: 25px;
+}
+.prod-info .text{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 22px;
+    padding: 40px 0 60px;
 }
 
-@media screen and (max-width: 1440px) {
+.product-desc .text,
+.product-desc .mini-title{max-width: 600px;}
 
-
-.ingridient-big .ingridient-img img { width: 100%; margin-left: -40%; }
-.ingridient.ingridient-2 .ingridient-img, .ingridient.ingridient-3 .ingridient-img, .ingridient.ingridient-4 .ingridient-img {width: 30%; padding: 0}
-.ingridient.ingridient-2 .ingridient-desc, .ingridient.ingridient-3 .ingridient-desc, .ingridient.ingridient-4 .ingridient-desc {width:50%; margin: 0}
-.ingridient.ingridient-4 { margin-left: -65%; }
-.ingridient.ingridient-3 { margin-left: -35%; }
-.ingridient.ingridient-2 { margin-left: -45%; }
-
-.three-block {max-height: 600px;}
-
-.made {margin: 5% 0}
-.made-box .text { padding: 7% 12% }
-.made-img img { width: 100%; margin-right: -60%; }
-
-.fifth-box .text { padding: 6%; }
-.products { margin: 0; }
-.block-25 { margin: 6% auto 3% }
-.sixth-box {margin: 5% 0 5%; }
-.copyright { margin-bottom: 0}
-.footer .menuContent { margin: 4% 0 }
-.ingridient-big .text { padding: 5% 12%; }
-.ingridient-img img { width: 230px; }
-.fourth-block .circle {width: 70%; padding-bottom: 70%;}
-.block-25 img {width: 85%}
-.ingridient-big .head {margin-top: -12%;}
-
-.page-bg img { width: 120%; margin-left: -10%; }
-
+.product-desc .text p {
+    margin: 0 0 12px;
+    line-height: 28px;
 }
-
-@media screen and (max-width: 1360px) {
-
-}
-
-@media screen and (max-width: 1280px) {
-.ingridient-big .text { padding: 5% 3%; }
-.prod-text {bottom: 18%}
-.three-block { max-height: 540px; }
-.made-box .head { padding-top: 0%; }
-
-}
-
-@media screen and (max-width: 1200px) {
-
-.prod-text .mini-title { font-size: 14px; }
-.prod-text .text { font-size: 10px; }
-
-}
-
-@media screen and (max-width: 1100px) {
-.ingridient.ingridient-big { margin-top: 0; }
-.ingridient-big .head {margin-top: -20%;}
-.fourth-block .circle { width: 80%;  padding-bottom: 80%; }
-.ingridient.ingridient-2 .ingridient-desc, .ingridient.ingridient-3 .ingridient-desc, .ingridient.ingridient-4 .ingridient-desc { width: 50%; margin-left: 50px; }
-.ingridient.ingridient-2 { margin-left: -30%; }
-.lang {top: 140px; right: 5%;}
-.three-block { max-height: 450px; }
-.element { padding: 15px!important; }
-
-}
-
-@media screen and (max-width: 1023px) {
-.cooking-title, .cooking-text { display: block; width: 50%; margin: 0 auto; }
-.cooking-text { width: 100% }
-.box-block { padding: 0%; margin: 4%; float: none; }
-.cooking { padding: 10% 0 7%;}
-.ingridient-big .head { margin-top: 0; }
-.ingridients-all{padding: 0; margin: 0}
-.ingridient.ingridient-2{margin: 0}
-.ingridient.ingridient-3{margin: 0}
-.ingridient.ingridient-4{margin: 0}
-.circle{display: none;}
-.ingridient.ingridient-2 .ingridient-desc, .ingridient.ingridient-3 .ingridient-desc, .ingridient.ingridient-4 .ingridient-desc {
-    width: 48%;
-    margin-left: 0;
-}
-.ingridient-2 .ingridient-desc .text, .ingridient-3 .ingridient-desc .text, .ingridient-4 .ingridient-desc .text {
-    padding: 5% 20% 5% 3%;
-}
-.ingridient.ingridient-2 .ingridient-img, .ingridient.ingridient-3 .ingridient-img, .ingridient.ingridient-4 .ingridient-img {
-    width: 48%;}
-.ingridient-desc .mini-title { padding: 0 3%;; text-align: left;}
-.lang { top: 3%;  right: 5%; }
-.made-img img { width: 135%; }
-.prod-text .mini-title { font-size: 12px; }
-.prod-text .text { font-size: 8px; }
-
-}
-
-@media screen and (max-width: 767px) {
-.second-block {width: 100%;max-height: 800px; min-height: 100%; }
-.cooking { padding: 14% 0;  width: 100%;  margin: 10% 0 0; }
-.cooking-title, .cooking-text { width: 80%; }
-
-.three-block {background-image: none; background-color: #e8e8e8; max-height: 100%;}
-.made-box, .made-img { width: 100%; }
-.made-img img {width: 80%;margin: 0 auto;}
-
-.ingridient-img, .ingridient-desc { display: block;width: 100%;}
-.ingridient-big .ingridient-img img {width: 90%; margin: 0 auto;}
-.ingridient.ingridient-2 .ingridient-img, .ingridient.ingridient-3 .ingridient-img, .ingridient.ingridient-4 .ingridient-img {
-    width: 100%;
-}
-.ingridient.ingridient-2 .ingridient-desc, .ingridient.ingridient-3 .ingridient-desc, .ingridient.ingridient-4 .ingridient-desc {
-    width: 100%;
-    margin: 0 auto 15px;
-}
-.ingridient-desc .mini-title { padding: 0 3%; text-align: center; }
-.ingridient-2 .ingridient-desc .text, .ingridient-3 .ingridient-desc .text, .ingridient-4 .ingridient-desc .text {
-    padding: 5%;
+.product-desc .mini-title{
+    padding: 20px 0 50px;
     text-align: center;
 }
-
-.block-25 {float: left;margin: 6% auto 3%; width: 50%; }
-.block-25 img { margin-bottom: 5px; }
-.products {margin: 0 0 15px 0;}
-.lang {top: 2%; right: 2%; }
-.arrow { bottom: -20px;}
-
-.prod-text { bottom: 12%; }
-
-
+.product-slide {
+    padding-right: 15px;
+}
+.product-desc{
+    padding-left: 15px;
 }
 
-@media screen and (max-width: 640px) {
-#options li a {width: 100%}
-.element {width: 100%;padding: 15px!important;}
+.slider-for{
+    margin: 0 auto;
+}
+.slider-nav {
+    margin: 20px auto 35px;
+}
+.slick-slide{outline: none!important;}
+.slider-nav .slick-slide { 
+    padding: 0 5px; 
+    opacity: 1;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.slider-nav img.slick-slide:hover,
+.slider-nav img.slick-slide.slick-current.slick-active { opacity: .6;}
 
+.product-information{
+    background-color: #e0e0e0;
+    max-width: 1200px;
+    padding: 2% 4%;
+}
+.text.strong{text-transform: uppercase;}
+.text.grey{color: #636161;text-decoration: underline;}
+
+.info-all .left{width: 30%;}
+.info-all .right{width: 70%;}
+
+.info-all .text.strong,
+.info-all .text.grey{
+    padding: 10px 0;
+}
+.info-all .text.strong:last-child,
+.info-all .text.grey:last-child{
+    padding: 10px 0 0;
 }
 
-@media screen and (max-width: 400px) {
-.block-25 {float: left; margin: 6% auto 3%;width: 100%;}
-
+.all-ingr{padding-top: 15px;}
+.all-ingr .text.grey{    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px 10px 0;
+    float: left;
 }
 
+/*one product*/
+
+
+
+
+
+
+/*modal*/
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index:999; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 14%; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -1285,5 +1214,190 @@ a.black-url:hover{
 
 .modal-footer a:hover {
     opacity: 1;
+}
+/*modal*/
+
+
+
+@media screen and (max-width: 1600px) {
+
+.block-25 img {width: 90%}
+.ingridient.ingridient-2 {  margin-left: -65%; }
+.slider-for, .slider-nav {width: 80%}
+}
+
+@media screen and (max-width: 1440px) {
+
+
+.ingridient-big .ingridient-img img { width: 100%; margin-left: -40%; }
+.ingridient.ingridient-2 .ingridient-img, .ingridient.ingridient-3 .ingridient-img, .ingridient.ingridient-4 .ingridient-img {width: 30%; padding: 0}
+.ingridient.ingridient-2 .ingridient-desc, .ingridient.ingridient-3 .ingridient-desc, .ingridient.ingridient-4 .ingridient-desc {width:50%; margin: 0}
+.ingridient.ingridient-4 { margin-left: -65%; }
+.ingridient.ingridient-3 { margin-left: -35%; }
+.ingridient.ingridient-2 { margin-left: -45%; }
+
+.three-block {max-height: 600px;}
+
+.made {margin: 5% 0}
+.made-box .text { padding: 7% 12% }
+.made-img img { width: 100%; margin-right: -60%; }
+
+.fifth-box .text { padding: 6%; }
+.products { margin: 0; }
+.block-25 { margin: 6% auto 3% }
+.sixth-box {margin: 5% 0 5%; }
+.copyright { margin-bottom: 0}
+.footer .menuContent { margin: 4% 0 }
+.ingridient-big .text { padding: 5% 12%; }
+.ingridient-img img { width: 230px; }
+.fourth-block .circle {width: 70%; padding-bottom: 70%;}
+.block-25 img {width: 85%}
+.ingridient-big .head {margin-top: -12%;}
+
+.page-bg img { width: 120%; margin-left: -10%; }
+
+
+
 
 }
+
+@media screen and (max-width: 1360px) {
+
+}
+
+@media screen and (max-width: 1280px) {
+.ingridient-big .text { padding: 5% 3%; }
+.prod-text {bottom: 18%}
+.three-block { max-height: 540px; }
+.made-box .head { padding-top: 0%; }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+.prod-text .mini-title { font-size: 14px; }
+.prod-text .text { font-size: 10px; }
+
+}
+
+@media screen and (max-width: 1100px) {
+.ingridient.ingridient-big { margin-top: 0; }
+.ingridient-big .head {margin-top: -20%;}
+.fourth-block .circle { width: 80%;  padding-bottom: 80%; }
+.ingridient.ingridient-2 .ingridient-desc, .ingridient.ingridient-3 .ingridient-desc, .ingridient.ingridient-4 .ingridient-desc { width: 50%; margin-left: 50px; }
+.ingridient.ingridient-2 { margin-left: -30%; }
+.lang {top: 140px; right: 5%;}
+.three-block { max-height: 450px; }
+.element { padding: 15px!important; }
+
+.slider-for, .slider-nav {width: 100%}
+
+}
+
+@media screen and (max-width: 1023px) {
+.cooking-title, .cooking-text { display: block; width: 50%; margin: 0 auto; }
+.cooking-text { width: 100% }
+.box-block { padding: 0%; margin: 4%; float: none; }
+.cooking { padding: 10% 0 7%;}
+.ingridient-big .head { margin-top: 0; }
+.ingridients-all{padding: 0; margin: 0}
+.ingridient.ingridient-2{margin: 0}
+.ingridient.ingridient-3{margin: 0}
+.ingridient.ingridient-4{margin: 0}
+.circle{display: none;}
+.ingridient.ingridient-2 .ingridient-desc, .ingridient.ingridient-3 .ingridient-desc, .ingridient.ingridient-4 .ingridient-desc {
+    width: 48%;
+    margin-left: 0;
+}
+.ingridient-2 .ingridient-desc .text, .ingridient-3 .ingridient-desc .text, .ingridient-4 .ingridient-desc .text {
+    padding: 5% 20% 5% 3%;
+}
+.ingridient.ingridient-2 .ingridient-img, .ingridient.ingridient-3 .ingridient-img, .ingridient.ingridient-4 .ingridient-img {
+    width: 48%;}
+.ingridient-desc .mini-title { padding: 0 3%;; text-align: left;}
+.lang { top: 3%;  right: 5%; }
+.made-img img { width: 135%; }
+.prod-text .mini-title { font-size: 12px; }
+.prod-text .text { font-size: 8px; }
+
+.product-desc .text p { line-height: 16px; }
+.prod-info .text { padding: 20px 0 30px; }
+.product-desc .mini-title {padding: 0 0 15px}
+
+}
+
+@media screen and (max-width: 767px) {
+.second-block {width: 100%;max-height: 800px; min-height: 100%; }
+.cooking { padding: 14% 0;  width: 100%;  margin: 10% 0 0; }
+.cooking-title, .cooking-text { width: 80%; }
+
+.three-block {background-image: none; background-color: #e8e8e8; max-height: 100%;}
+.made-box, .made-img { width: 100%; }
+.made-img img {width: 80%;margin: 0 auto;}
+
+.ingridient-img, .ingridient-desc { display: block;width: 100%;}
+.ingridient-big .ingridient-img img {width: 90%; margin: 0 auto;}
+.ingridient.ingridient-2 .ingridient-img, .ingridient.ingridient-3 .ingridient-img, .ingridient.ingridient-4 .ingridient-img {
+    width: 100%;
+}
+.ingridient.ingridient-2 .ingridient-desc, .ingridient.ingridient-3 .ingridient-desc, .ingridient.ingridient-4 .ingridient-desc {
+    width: 100%;
+    margin: 0 auto 15px;
+}
+.ingridient-desc .mini-title { padding: 0 3%; text-align: center; }
+.ingridient-2 .ingridient-desc .text, .ingridient-3 .ingridient-desc .text, .ingridient-4 .ingridient-desc .text {
+    padding: 5%;
+    text-align: center;
+}
+
+.block-25 {float: left;margin: 6% auto 3%; width: 50%; }
+.block-25 img { margin-bottom: 5px; }
+.products {margin: 0 0 15px 0;}
+.lang {top: 2%; right: 2%; }
+.arrow { bottom: -20px;}
+
+.prod-text { bottom: 12%; }
+
+.prod-info .text { width: 100%; }
+
+.left.product-slide,
+.right.product-desc{width: 100%;}
+
+.product-slide,
+.product-desc {padding:0;}
+
+.product-desc {padding-bottom: 15px;}
+
+
+
+}
+
+@media screen and (max-width: 640px) {
+#options li a {width: 100%}
+.element {width: 100%;padding: 15px!important;}
+
+}
+
+
+@media screen and (max-width: 600px){
+    .product-information .left,
+.product-information .right{width: 100%}
+
+.right.all-ingridients{padding-top: 20px;}
+.info-all{padding-top: 15px}
+.info-all .left{width: 30%}
+.info-all .right{width: 70%;}
+.info-all .text.strong, .info-all .text.grey { padding: 5px 0; }
+
+.all-ingr .text.grey {padding: 5px 10px 5px 0; }
+.product-information { margin-bottom: 30px }
+.all-ingr { padding-top: 10px; }
+
+.modal-content { width: 90%; }
+}
+
+@media screen and (max-width: 400px) {
+.block-25 {float: left; margin: 6% auto 3%;width: 100%;}
+
+}
+
