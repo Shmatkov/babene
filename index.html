@@ -16,6 +16,11 @@
 		<script src="js/modernizr.custom.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/slick.css">
   		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  		<style type="text/css">
+  			.wow {
+		      visibility: hidden;
+		    }
+  		</style>
 	</head>
 	<body>
 		<div id="ip-container" class="ip-container" style="overflow: hidden ">
@@ -112,10 +117,10 @@
 			<section class="fourth-block">
 				
 				<div class="ingridient ingridient-big">
-					<div class="ingridient-img">
+					<div class="ingridient-img wow slideInLeft" data-wow-delay="0.5s">
 						<img src="img/ingridients-1.png">
 					</div>
-					<div class="ingridient-desc">
+					<div class="ingridient-desc wow slideInRight" data-wow-delay="0.7s">
 						<span class="head"> NATURAL & QUALITY INGRIDIENtS</span>
 						<span class="text">Let’s face it, cooking is not a top priority in the lives of every man, woman, or child on the planet. In fact, far too people have made learning to cook a priority in their lives. This means that we often exist on convenience foods and boxed mixes rather than taking the effort to prepare healthy meals for our families and our own personal enjoyment. The same holds true for lunches when we often resort to a can of soup or box of macaroni and cheese or some other such product rather than putting our creative efforts into making ataco </span>
 					</div>
@@ -126,10 +131,10 @@
 					<div class="ingridients-all" >
 						<div class="ingridient ingridient-2">
 							<div style="position: relative; display: block">
-								<div class="ingridient-img">
+								<div class="ingridient-img wow zoomIn" data-wow-delay="0.5s">
 									<img src="img/img-1.png">
 								</div>
-								<div class="ingridient-desc">
+								<div class="ingridient-desc wow bounceInRight" data-wow-delay="0.7s" data-wow-duration="1s" style="visibility: hidden;">
 									<span class="mini-title">1. FLOAR</span>
 									<span class="text">Let’s face it, cooking is not a top priority in the lives of every man, woman, or child on the planet</span>
 								</div>
@@ -138,10 +143,10 @@
 
 						<div class="ingridient ingridient-3">
 							<div style="position: relative; display: block">
-								<div class="ingridient-img">
+								<div class="ingridient-img wow zoomIn" data-wow-delay="0.6s">
 									<img src="img/img-2.png">
 								</div>
-								<div class="ingridient-desc">
+								<div class="ingridient-desc wow bounceInRight" data-wow-delay="0.7s" data-wow-duration="1s" style="visibility: hidden;">
 									<span class="mini-title">2. BUTTER</span>
 									<span class="text">Let’s face it, cooking is not a top priority in the lives of every man, woman, or child on the planet</span>
 								</div>
@@ -150,17 +155,17 @@
 
 						<div class="ingridient ingridient-4">
 							<div style="position: relative; display: block">
-								<div class="ingridient-img">
+								<div class="ingridient-img wow zoomIn" data-wow-delay="0.6s">
 									<img src="img/img-3.png">
 								</div>
-								<div class="ingridient-desc">
+								<div class="ingridient-desc wow bounceInRight" data-wow-delay="0.7s" data-wow-duration="1s" style="visibility: hidden;">
 									<span class="mini-title">3. SESAME</span>
 									<span class="text">Let’s face it, cooking is not a top priority in the lives of every man, woman, or child on the planet</span>
 								</div>
 							</div>
 						</div>
 		
-						<div class="circle"></div>
+						<div class="circle wow zoomIn"></div>
 						
 					</div>
 
@@ -182,19 +187,19 @@
 						<span class="text center">Short text about our products. Short text about our products.</span>
 						<div class="products">
 							<div class="block-25">
-								<a href="#"><img src="img/products-1.jpg"></a>
+								<a href="product.html"><img src="img/products-1.jpg"></a>
 								<span class="mini-title">GRISSINI</span>
 							</div>
 							<div class="block-25">
-								<a href="#"><img src="img/products-2.jpg"></a>
+								<a href="product.html"><img src="img/products-2.jpg"></a>
 								<span class="mini-title">HONEYCAKE</span>
 							</div>
 							<div class="block-25">
-								<a href="#"><img src="img/products-3.jpg"></a>
+								<a href="product.html"><img src="img/products-3.jpg"></a>
 								<span class="mini-title">PIE & CAKE</span>
 							</div>
 							<div class="block-25">
-								<a href="#"><img src="img/products-4.jpg"></a>
+								<a href="product.html"><img src="img/products-4.jpg"></a>
 								<span class="mini-title">CUPCAKE</span>
 							</div>
 							<div class="clear"></div>
@@ -240,27 +245,26 @@
 			  	</div>
 			</div>
 
-<script>
+			<script>
+				var modal = document.getElementById('myModal');
+				var btn = document.getElementById("myBtn");
+				var span = document.getElementsByClassName("close")[0];
+				btn.onclick = function() {
+				    modal.style.display = "block";
+				}
 
-var modal = document.getElementById('myModal');
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+				span.onclick = function() {
+				    modal.style.display = "none";
+				}
 
-span.onclick = function() {
-    modal.style.display = "none";
-}
+				window.onclick = function(event) {
+				    if (event.target == modal) {
+				        modal.style.display = "none";
+				    }
+				}
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-setTimeout(function(){ modal.style.display = "block";}, 5000);
-</script>
+				// setTimeout(function(){ modal.style.display = "block";}, 5000);
+			</script>
 		</div>
 		<!-- /container -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -268,9 +272,13 @@ setTimeout(function(){ modal.style.display = "block";}, 5000);
 		<script src="js/pathLoader.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
 		<script src="js/smooth-scroll.js"></script>
-
+		<script src="js/wow.min.js"></script>
+		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+
+		<script type="text/javascript">new WOW().init();</script>
+
 	</body>
 </html>
