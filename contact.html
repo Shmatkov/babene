@@ -68,7 +68,7 @@
 			</section>
 
 			<section class="mbox-light contact-all">
-				<div class="left">
+				<div class="left all1">
 					<div class="contact-info">
 						<div class="left">
 							<span class="text"><strong>PHONE NUMBER</strong></span>
@@ -97,16 +97,38 @@
 				</div>
 			</section><div class="clear"></div>
 
-			<section class="mbox-full">
-				<div class="action-block">
-					<div class="mini-title">Would you like to sell our product?</div>
-					<div class="action-button">
-						<a href="">CONTACT US</a>
+			<section class="mbox-full section-grey">
+				<div class="mbox-light">
+					<div class="action-inform" id="action-inform" style="display: none;">
+						<div class="left">
+							<span class="mini-title">Would you like to sell our product?</span>
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+								<p>commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div class="right">
+							<form id="contact_form_2" action="" method="POST" class="contact-form">
+				                <input type="text" name="name" placeholder="NAME" class="form-control" required>
+				                <input type="email" name="email" placeholder="EMAIL" class="form-control" required>
+				                <input type="tel" name="tel" placeholder="PHONE" class="form-control" required>
+				                <input type="text" name="company" placeholder="COMPANY" class="form-control" required>
+				                <textarea placeholder="MESSAGE" name="message" class="form-control" required></textarea>
+		                		<button type="submitcontactformt" class="contact-form-submit">SEND</button>
+		            		</form>
+						</div>
+					</div><div class="clear"></div>
+					<div class="action-block" id="action-block">
+						<div class="mini-title">Would you like to sell our product?</div>
+						<div class="action-button">
+							<a href="#" class="but-act" id="but-act">CONTACT US</a>							
+						</div>
 					</div>
+					
 				</div>
 			</section>
 	
-			<section>
+			<section class="mbox-full">
 				<div id="map"></div>
 			</section>
 			
@@ -149,37 +171,35 @@
 		<script src="js/isotope.js"></script>
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY7rCi_iSohApDOU8ZPNfuLcoAlEd6Sc0&signed_in=true"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEo8t-Tnc7dIYwX_BkbToYU9fTVvVaeo0&signed_in=true"></script>
 	    <script>
 			// In the following example, markers appear when the user clicks on the map.
 			// Each marker is labeled with a single alphabetical character.
-			var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+			var labels = 'Babene';
 			var labelIndex = 0;
 
-			function initialize() {
-			  var bangalore = { lat: 12.97, lng: 77.59 };
+			function initialize() { 
+			  var babene = { lat: 50.425689, lng: 30.535757 };
 			  var map = new google.maps.Map(document.getElementById('map'), {
-			    zoom: 12,
-			    center: bangalore
+			    zoom: 18,
+			    center: babene,
+			    disableDefaultUI: true
 			  });
 
-			  // This event listener calls addMarker() when the map is clicked.
-			  google.maps.event.addListener(map, 'click', function(event) {
-			    addMarker(event.latLng, map);
-			  });
-
-			  // Add a marker at the center of the map.
-			  addMarker(bangalore, map);
+			  addMarker(babene, map);
+			    
 			}
 
 			// Adds a marker to the map.
 			function addMarker(location, map) {
 			  // Add the marker at the clicked location, and add the next-available label
 			  // from the array of alphabetical characters.
+			  // var image = 'img/location.png';
 			  var marker = new google.maps.Marker({
 			    position: location,
 			    label: labels[labelIndex++ % labels.length],
 			    map: map
+			    // icon: image
 			  });
 			}
 

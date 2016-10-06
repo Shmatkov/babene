@@ -28,7 +28,7 @@ section {
 	padding: 1em;
 	text-align: center;
 }
-
+.section-grey{background-color: #e0e0e0;margin:5% 0!important;}
 /* helping adds*/
 .clear {
     clear: both;
@@ -1147,7 +1147,8 @@ a.black-url:hover{
 .contact-all hr{margin-bottom: 25px;}
 
 
-#contact_form .form-control {
+#contact_form .form-control,
+#contact_form_2 .form-control {
     margin-bottom: 20px;
     padding: 15px 10px;
     background-color: #fff;
@@ -1162,7 +1163,8 @@ a.black-url:hover{
     outline: none;
 }
 
-#contact_form .contact-form-submit {
+#contact_form .contact-form-submit,
+#contact_form_2 .contact-form-submit {
     border: 1px solid #000;
     color: #fff;
     padding: 10px 20px;
@@ -1176,7 +1178,8 @@ a.black-url:hover{
     transition: all 300ms ease;
 }
 
-#contact_form .contact-form-submit:hover {
+#contact_form .contact-form-submit:hover,
+#contact_form_2 .contact-form-submit:hover {
     background-color: #fff;
     color: #000;
 }
@@ -1185,21 +1188,21 @@ a.black-url:hover{
     margin-left: 15%;
 }
 
-.action-block {
-    background-color: #e0e0e0;
-    margin: 5% 0 7%;
-    padding: 3% 0;
+.action-block,
+.action-inform {
+    margin: 0;
+    padding: 5% 0;
 }
 
 .action-block .mini-title {
     text-transform: uppercase;
     display: inline-block;
-    width: 45%;
+    width: 50%;
     vertical-align: middle;
 }
 .action-button{
     display: inline-block;
-    width: 45%;
+    width: 49%;
     vertical-align: middle;
 }
 
@@ -1222,11 +1225,20 @@ a.black-url:hover{
     background-color: #fff; 
 }
 
+.action-inform .mini-title {
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+#contact_form_2 {
+    padding-bottom: 30px;
+}
 /*contact*/
 
 
 
-
+/*map*/
+#map {height: 400px;margin: -5% 0;}
+/*map*/
 /*modal*/
 /* The Modal (background) */
 .modal {
@@ -1438,6 +1450,11 @@ a.black-url:hover{
 .prod-info .text { padding: 20px 0 30px; }
 .product-desc .mini-title {padding: 0 0 15px}
 
+.contact-info .right { width: 55%; }
+.contact-info .left { width: 45%; }
+#contact_form .form-control, #contact_form_2 .form-control { padding: 10px; }
+#map{height: 225px;}
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1490,6 +1507,18 @@ a.black-url:hover{
 #options li a {width: 100%}
 .element {width: 100%;padding: 15px!important;}
 
+.contact-info .right { width: 65%; }
+.contact-info .left { width: 35%; }
+.left.all1 { width: 100%; }
+.right.contacts-form { width: 100%; }
+.action-inform .left,
+.action-inform .right { width: 100%; }
+.action-inform .mini-title {padding-bottom: 5px;}
+
+.action-button { display: block; padding: 30px 0;  width: 100%; height: 100%; }
+.action-block .mini-title{width: 100%}
+
+
 }
 
 
@@ -1510,6 +1539,11 @@ a.black-url:hover{
 .modal-content { width: 90%; }
 }
 
+@media screen and (max-width: 480px) {
+.contact-info .right { width: 50%; }
+.contact-info .left { width: 50%; }
+
+}
 @media screen and (max-width: 400px) {
 .block-25 {float: left; margin: 6% auto 3%;width: 100%;}
 

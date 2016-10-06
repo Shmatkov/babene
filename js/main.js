@@ -143,7 +143,17 @@ $(document).ready(function() {
 	    callback: function ( anchor, toggle ) {} // Function to run after scrolling
 	});
 
-	
+
+	 // $("but-act").click(function(){
+  //       console.log('Captain’s Log');
+  //       $('#action-block').slideUp(function() {$('#action-inform').slideDown();});
+  //   });
+    
+	$('#but-act').click(function(e) {
+	  event.preventDefault();
+	  $('#action-block').slideUp(function() {$('#action-inform').slideDown();});
+	});
+		
 
 });
 
