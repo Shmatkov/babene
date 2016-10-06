@@ -143,17 +143,33 @@ $(document).ready(function() {
 	    callback: function ( anchor, toggle ) {} // Function to run after scrolling
 	});
 
-
-	 // $("but-act").click(function(){
-  //       console.log('Captain’s Log');
-  //       $('#action-block').slideUp(function() {$('#action-inform').slideDown();});
-  //   });
-    
+   
 	$('#but-act').click(function(e) {
 	  event.preventDefault();
-	  $('#action-block').slideUp(function() {$('#action-inform').slideDown();});
+	  $('#action-block').slideUp(function() {$('#action-inform').slideDown();} );
+	  $("section").removeClass("section-orange");
 	});
+
+	$('#play').click(function(e) {
+    e.preventDefault();
+    $('.overlay').hide();
+    player.playVideo(); return false;
+
+ })
 		
+var player;
+
+function onYouTubeIframeAPIReady() {player = new YT.Player('player');}
+  if(window.opera){
+      addEventListener('load', onYouTubeIframeAPIReady, false);
+}
+
+
+
 
 });
+
+
+
+ 
 
