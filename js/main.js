@@ -150,19 +150,13 @@ $(document).ready(function() {
 	  $("section").removeClass("section-orange");
 	});
 
-	$('#play').click(function(e) {
-    e.preventDefault();
-    $('.overlay').hide();
-    player.playVideo(); return false;
 
- })
-		
-var player;
-
-function onYouTubeIframeAPIReady() {player = new YT.Player('player');}
-  if(window.opera){
-      addEventListener('load', onYouTubeIframeAPIReady, false);
-}
+$('#play-button').click(function(e) {
+    	e.preventDefault();
+	    $('.overlay').hide();
+	    player.playVideo(); 
+	    return false;
+})
 
 
 

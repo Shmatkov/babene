@@ -42,7 +42,7 @@
                         <li class="menuListItem"><a href="products.html" class="menuLink ">PRODUCT</a></li>
                         <li class="menuListItem"><a href="about.html" class="menuLink active">ABOUT</a></li>
                         <li class="menuListItem"><a href="contact.html" class="menuLink ">CONTACT</a></li>
-                        <li class="menuListItem"><a href="#" class="menuLink">NEWS</a></li>
+                        <li class="menuListItem"><a href="news.html" class="menuLink">NEWS</a></li>
                     </ul>
                 </div>
             </nav>
@@ -124,11 +124,53 @@
 			</section>
 	
 			<section class="mbox-full video-block">
-				<iframe id="player" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/-4043Htlxjg?rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>
+				<!-- <iframe id="player" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/-4043Htlxjg?rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen=""></iframe> -->
+
+				<iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/-4043Htlxjg?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
+
+
 				<div class="overlay">
-	                <a href="javascript: void(0)" class="play" id="play"><img src="img/play-button.png" alt="" width="200"></a>
+	                <a href="javascript: void(0)" class="play" id="play-button"><img src="img/play-button.png" alt="" width="200"></a>
 	                <span class="vfix"></span>
 	            </div>
+
+
+
+<!-- <button class="button" id="play-button">AAA</button> -->
+
+<script type="text/javascript">
+	
+var player;
+
+function onYouTubePlayerAPIReady() {
+ player = new YT.Player('video', {
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  
+var playButton = document.getElementById("play-button");
+  playButton.addEventListener("click", function() {
+    player.playVideo();
+  });
+   
+}
+
+// Inject YouTube API script
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+</script>
+
+
+
+
+
 			</section>
 			
 			<section class="mbox-light">
@@ -155,13 +197,115 @@
 						</div>
 					</div>
 					<div class="team-item">
-						<img src="img/about/team-4.jpg">
+						<div>
+							<img src="img/about/team-4.jpg">
+						</div>						
 						<div class="team-info">
 							<span class="mini-title">ANASTASIIA VOVK</span>
 					      	<span class="text">chief cook</span>
 						</div>
 					</div>					
 				</div><div class="clear"></div>
+			</section>
+
+			<section class="mbox-full market-block section-grey ">
+				<div class="mbox-light">
+					<span class="sub-title">WHERE TO BUY</span>
+					<div class="markets">
+						<div class="market">
+							<div class="market-title">WINETIME MARKET</div>
+							<div class="market-img">
+								<a href="#">
+									<img src="img/partner/winetime_market.jpg">
+									<span class="text">GO TO SITE</span>
+								</a>								
+							</div>
+						</div>
+						<div class="market">
+							<div class="market-title">NOVUS market</div>
+							<div class="market-img">
+								<a href="#">
+									<img src="img/partner/novus.jpg">
+									<span class="text">GO TO SITE</span>
+								</a>								
+							</div>
+						</div>
+						<div class="market">
+							<div class="market-title">MEGAMARKET</div>
+							<div class="market-img">
+								<a href="#">
+									<img src="img/partner/megamarket.jpg">
+									<span class="text">GO TO SITE</span>
+								</a>								
+							</div>
+						</div>
+						<div class="market">
+							<div class="market-title">ECO-LAVKA market</div>
+							<div class="market-img">
+								<a href="#">
+									<img src="img/partner/eko-lavka_market.jpg">
+									<span class="text">GO TO SITE</span>
+								</a>								
+							</div>
+						</div>
+						<div class="market">
+							<div class="market-title">GOODWINE store</div>
+							<div class="market-img">
+								<a href="#">
+									<img src="img/partner/goodwine_store.jpg">
+									<span class="text">GO TO SITE</span>
+								</a>								
+							</div>
+						</div>
+						<div class="market">
+							<div class="market-title">WOG gas station</div>
+							<div class="market-img">
+								<a href="#">
+									<img src="img/partner/wog.jpg">
+									<span class="text">GO TO SITE</span>
+								</a>								
+							</div>
+						</div>
+						<div class="market">
+							<div class="market-title">okko gas station</div>
+							<div class="market-img">
+								<a href="#">
+									<img src="img/partner/okko_gas_station.jpg">
+									<span class="text">GO TO SITE</span>
+								</a>								
+							</div>
+						</div>
+						<div class="market">
+							<div class="market-title">VINTAGE winemarket</div>
+							<div class="market-img">
+								<a href="#">
+									<img src="img/partner/vintage_winemarket.jpg">
+									<span class="text">GO TO SITE</span>
+								</a>								
+							</div>
+						</div>
+						<div class="market">
+							<div class="market-title">CHEESE KINGDOM</div>
+							<div class="market-img">
+								<a href="#">
+									<img src="img/partner/cheese_kingdom.jpg">
+									<span class="text">GO TO SITE</span>
+								</a>								
+							</div>
+						</div>
+						<div class="market">
+							<div class="market-title">VINTAGE winemarket</div>
+							<div class="market-img">
+								<a href="#">
+									<img src="img/partner/vintage_winemarket.jpg">
+									<span class="text">GO TO SITE</span>
+								</a>								
+							</div>
+						</div>
+						
+					</div><div class="clear"></div>
+					<span class="mini-title">You can find our products in these and other stores</span>
+				</div>				
 			</section>
 			
 			<section class="mbox-full">
@@ -181,9 +325,9 @@
                     <ul class="menuList">
                         <li class="menuListItem"><a href="index.html" class="menuLink">HOME</a></li>
                         <li class="menuListItem"><a href="products.html" class="menuLink">PRODUCT</a></li>
-                        <li class="menuListItem"><a href="#" class="menuLink">ABOUT</a></li>
+                        <li class="menuListItem"><a href="about.html" class="menuLink">ABOUT</a></li>
                         <li class="menuListItem"><a href="contact.html" class="menuLink">CONTACT</a></li>
-                        <li class="menuListItem"><a href="#" class="menuLink">NEWS</a></li>
+                        <li class="menuListItem"><a href="news.html" class="menuLink">NEWS</a></li>
                     </ul>
                 </div>
                 <div class="copyright">
@@ -202,7 +346,7 @@
 		<script src="js/isotope.pkgd.js"></script>
 		<script src="js/isotope.js"></script>
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<script src="http://www.youtube.com/player_api"></script>
+		<!-- <script src="http://www.youtube.com/player_api"></script> -->
 		
 		
 

@@ -1336,6 +1336,7 @@ a.black-url:hover{
     max-width: 285px;
     margin: 0;
     padding: 0;
+    display: block;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
@@ -1364,10 +1365,10 @@ a.black-url:hover{
 .team-item .team-info{
     z-index: 2;
     text-align: center;
-    width: 35%;
+    width: 60%;
     color: #000;
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
     left: 4%;
     opacity: 0;
 
@@ -1390,13 +1391,83 @@ a.black-url:hover{
     -o-transition: all 300ms ease;
 }
 .team-item:hover .team-info{opacity: 1}
-.team-info .text{text-transform: uppercase;font-size: 14px}
-.team-info .mini-title {
-    font-size: 18px;
-    text-transform: uppercase;
-}
+.team-info .text{text-transform: uppercase;font-size: 14px; text-align: center;}
+.team-info .mini-title { font-size: 18px; text-transform: uppercase; text-align: center;}
 @media screen and (max-width: 1200px){ .team-info .mini-title  {  font-size: 14px; } .team-info .text{font-size: 10px;} }
 @media screen and (max-width: 1023px){ .team-info .mini-title {  font-size: 12px; } }
+
+.markets{
+    display: block;
+    position: relative;
+    margin: 40px 0 0;
+}
+
+.market {
+    width: 20%;
+    max-width: 215px;
+    float: left;
+    margin: 12px;
+}
+.market-img{
+    position: relative;
+}
+.market-img img {
+    width: 100%;
+    display: block;
+
+}
+
+.market-title {
+    text-align: center;
+    height: 44px;
+    margin-bottom: 15px;
+    padding: 0 25%;
+    text-transform: uppercase;
+}
+.mbox-full.market-block{
+    max-height: 100%;
+}
+
+.market-img a:before {
+    content: "";
+    background-image: url(../img/partner/hover.png);
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+.market-img a:hover:before{
+    opacity: 1
+}
+
+.market-img span{
+    opacity: 0;
+    position: absolute;
+    top: 49%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+.market-img a:hover span{opacity: 1}
+
+.market-block .sub-title{padding-top: 50px;}
+.market-block .mini-title{padding: 50px 0;}
+
 
 /*about*/
 
@@ -1546,7 +1617,7 @@ a.black-url:hover{
 
 .page-bg img { width: 120%; margin-left: -10%; }
 
-
+.market { margin: 10px; }
 
 
 }
@@ -1560,6 +1631,10 @@ a.black-url:hover{
 .prod-text {bottom: 18%}
 .three-block { max-height: 540px; }
 .made-box .head { padding-top: 0%; }
+
+.market { width: 18%; margin: 10px; }
+.team-info .mini-title { font-size: 16px; }
+.team-info .text {font-size: 12px;}
 
 }
 
@@ -1604,6 +1679,12 @@ a.black-url:hover{
 .team-item img { -webkit-filter: none;  filter: none; }
 .team-item .team-info{opacity: 1}
 
+.market { width: 17%; }
+.market-title { padding: 0 11%; font-size: 14px;margin-bottom: 10px;}
+.markets { margin: 20px 0 0; }
+.market-block .mini-title { padding: 20px 0 50px; }
+
+
 }
 
 @media screen and (max-width: 1023px) {
@@ -1641,6 +1722,9 @@ a.black-url:hover{
 #contact_form .form-control, #contact_form_2 .form-control { padding: 10px; }
 #map{height: 225px;}
 .video-block { height: 440px; }
+
+.team-info .mini-title { font-size: 12px; }
+.team-info .text { font-size: 10px; }
 
 }
 
@@ -1686,7 +1770,13 @@ a.black-url:hover{
 
 .product-desc {padding-bottom: 15px;}
 
-
+.market { width: 16%; }
+.market-title {
+    padding: 0;
+    font-size: 12px;
+    height: 30px;
+    margin-bottom: 10px;
+}
 
 }
 
@@ -1706,11 +1796,15 @@ a.black-url:hover{
 .action-block .mini-title{width: 100%}
 
 .about-left, .about-right { display: block; width: 100%;  text-align: center; margin: 0 auto;}
-.about-block-1 .about-left, .about-block-2 .about-right { padding: 0; }
+.about-block-1 .about-left, .about-block-2 .about-right { padding: 10px 0; }
 .about-block-1 img, .about-block-2 img{padding: 0}
 .video-block { height: 370px; }
 .team-item {width: 50%; }
 .play img {  width: 40px; }
+
+.about-right .soc-icon {padding: 30px 20%;}
+.about-block-2 .about-left { position: absolute; bottom: 0; }
+.about-block-2 .about-right { margin-bottom: 50%; }
 
 }
 
@@ -1736,9 +1830,15 @@ a.black-url:hover{
 .contact-info .right { width: 50%; }
 .contact-info .left { width: 50%; }
 .video-block {  height: 200px; }
+.market { width: 27%; height: 150px;}
+
 }
+
 @media screen and (max-width: 400px) {
 .block-25 {float: left; margin: 6% auto 3%;width: 100%;}
+.market { width: 42%; height: 175px; }
+.team-info .mini-title { font-size: 10px; }
+.team-info .text { font-size: 8px; }
 
 }
 
