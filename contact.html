@@ -179,10 +179,11 @@
 			var labelIndex = 0;
 
 			function initialize() { 
-			  var babene = { lat: 50.425689, lng: 30.535757 };
+			  var babene = { lat: 50.425790, lng: 30.535061};
 			  var map = new google.maps.Map(document.getElementById('map'), {
 			    zoom: 18,
 			    center: babene,
+			    scrollwheel:  false,
 			    disableDefaultUI: true
 			  });
 
@@ -194,12 +195,12 @@
 			function addMarker(location, map) {
 			  // Add the marker at the clicked location, and add the next-available label
 			  // from the array of alphabetical characters.
-			  // var image = 'img/location.png';
+			  var image = 'img/location.png';
 			  var marker = new google.maps.Marker({
 			    position: location,
-			    label: labels[labelIndex++ % labels.length],
-			    map: map
-			    // icon: image
+			    // label: labels[labelIndex++ % labels.length],
+			    map: map,
+			    icon: image
 			  });
 			}
 
