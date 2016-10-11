@@ -1510,7 +1510,7 @@ a.black-url:hover{
     padding-left: 20px;
 
 }
-
+.news-short.text{line-height: 22px}
 /*news*/
 
 /*map*/
@@ -1827,6 +1827,10 @@ a.black-url:hover{
     margin-bottom: 10px;
 }
 
+.news-short.text{line-height: normal;}
+.news-info { margin: 10px 0; }
+
+
 }
 
 @media screen and (max-width: 640px) {
@@ -1857,7 +1861,7 @@ a.black-url:hover{
 
 .news-info { margin: 10px 0; }
 .news-img { width: 100%; padding-right: 0; }
-.news-desc { width: 100%; padding-left: 0; }
+.news-desc { width: 100%; padding-left: 0; padding-top: 15px;}
 .news-foo { width: 100%;  padding-left: 0;  bottom: -25px; }
 
 
