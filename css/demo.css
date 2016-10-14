@@ -1511,7 +1511,135 @@ a.black-url:hover{
 
 }
 .news-short.text{line-height: 22px}
+
 /*news*/
+
+/*single post*/
+
+.news-post {
+    width: 80%;
+    margin: 40px auto 0;
+}
+
+.post-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.post-img img {
+    width: 100%;
+    max-width: 
+    height: auto;
+}
+
+.news-info .date{
+    text-transform: uppercase;
+}
+.post-info .news-tag {
+    float: none;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+}
+
+.post-info .news-info {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post-info {
+    margin: 25px 0;
+}
+
+.single-slider{
+    max-width: 474px;
+    width: 50%;
+    margin:30px auto;
+}
+
+.single-slider .slick-slide img {
+    display: block;
+    width: 100%;
+}
+
+.single-slider .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: black;
+}
+
+.single-slider .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+.post-content blockquote {
+    border-left: 10px solid #fcbf55;
+    padding: 40px 30px;
+    text-align: center;
+    background-color: #f8f7f5;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.post-content .news-share {
+    width: 100%;
+    float: none;
+}
+
+.post-content .news-share .soc-icon {
+    width: 30%;
+}
+
+.news-hr{
+    margin: 40px 0 80px;
+}
+
+.more-news-block .mini-title {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.more-item .mini-title{
+    font-size: 18px;
+}
+
+.more-news {
+    margin: 40px auto 0;
+    position: relative;
+}
+
+.more-item-img img {
+    width: 100%;
+}
+
+.more-item {
+    width: 22%;
+    display: block;
+    vertical-align: top;
+    float: left;
+    margin: 0 2%;
+}
+
+.more-item:first-child{margin-left:0;}
+.more-item:last-child{margin-right:0;}
+
+.more-item .mini-title a {
+    color: #000;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+.more-item .mini-title a:hover {opacity: .5}
+
+.more-item .date.text {
+    text-transform: uppercase;
+}
+
+
+
+/*single post*/
 
 /*map*/
 #map {height: 400px;margin: -5% 0;}
@@ -1725,6 +1853,9 @@ a.black-url:hover{
 .market-title { padding: 0 11%; font-size: 14px;margin-bottom: 10px;}
 .markets { margin: 20px 0 0; }
 .market-block .mini-title { padding: 20px 0 50px; }
+.more-item .mini-title { font-size: 14px; }
+.more-item .date.text { font-size: 10px; }
+.news-hr { margin: 40px 0; }
 
 
 }
@@ -1773,7 +1904,8 @@ a.black-url:hover{
 .news-foo { width: 60%;  padding-left: 10px; bottom: -25px;}
 .news-info { margin: 15px 0; }
 
-
+.more-item .mini-title { font-size: 12px; }
+.more-item .date.text { font-size: 8px;}
 
 }
 
@@ -1865,6 +1997,21 @@ a.black-url:hover{
 .news-foo { width: 100%;  padding-left: 0;  bottom: -25px; }
 
 
+}
+
+
+@media screen and (max-width: 639px){
+
+.more-item {
+    width: 45%;
+    display: block;
+    vertical-align: top;
+    float: left;
+    margin: 0 2% 4%!important;
+}
+
+
+
 
 }
 
@@ -1884,6 +2031,11 @@ a.black-url:hover{
 .all-ingr { padding-top: 10px; }
 
 .modal-content { width: 90%; }
+
+.news-post {  width: 100%; }
+
+.single-slider { width: 80%; }
+
 }
 
 @media screen and (max-width: 480px) {

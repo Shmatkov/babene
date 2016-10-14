@@ -134,6 +134,17 @@ $(document).ready(function() {
 	  focusOnSelect: true
 	});
 
+	$('.single-slider').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 1000,
+	  slidesToShow: 1,
+	  adaptiveHeight: true,
+	  arrows: false,
+	  // autoplay: true,
+  	  // autoplaySpeed: 4000,
+	});
+
 	smoothScroll.init({
 	    selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
 	    selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
