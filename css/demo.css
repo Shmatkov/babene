@@ -1819,8 +1819,22 @@ a.black-url:hover{
 .ingridient.ingridient-big { margin-top: 0; }
 .ingridient-big .head {margin-top: -20%;}
 .fourth-block .circle { width: 80%;  padding-bottom: 80%; }
-.ingridient.ingridient-2 .ingridient-desc, .ingridient.ingridient-3 .ingridient-desc, .ingridient.ingridient-4 .ingridient-desc { width: 50%; margin-left: 50px; }
+
+.ingridient.ingridient-2 .ingridient-desc, 
+.ingridient.ingridient-3 .ingridient-desc, 
+.ingridient.ingridient-4 .ingridient-desc { width: 50%; margin-left: 50px; }
+
 .ingridient.ingridient-2 { margin-left: -30%; }
+
+.ingridient.ingridient-3 {  margin-left: -10%; }
+.ingridient.ingridient-2 .ingridient-img, .ingridient.ingridient-3 .ingridient-img, .ingridient.ingridient-4 .ingridient-img {
+    width: 40%;
+    padding: 0;
+}
+
+.ingridient.ingridient-4 { margin-top: 7%; margin-left: -40%; }
+
+
 .lang {top: 140px; right: 5%;}
 .three-block { max-height: 450px; }
 .element { padding: 15px!important; }
