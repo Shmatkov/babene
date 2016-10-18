@@ -1274,6 +1274,10 @@ a.black-url:hover{
     vertical-align: middle;
     width: 48%;
 }
+.about-left .text,
+.about-right .text{
+    line-height: 30px;
+}
 
 .about-right .soc-icon {  
     width: 100%; 
@@ -1876,6 +1880,7 @@ a.black-url:hover{
 .more-item .date.text { font-size: 10px; }
 .news-hr { margin: 40px 0; }
 
+.about-left .text, .about-right .text {line-height: 24px;}
 
 }
 
@@ -1928,6 +1933,8 @@ a.black-url:hover{
 
 .product-information { width: 88%!important;}
 .product-more-info {padding: 0;}
+
+.about-left .text, .about-right .text { line-height: 20px; }
 
 }
 
@@ -1983,6 +1990,8 @@ a.black-url:hover{
 
 .news-short.text{line-height: normal;}
 .news-info { margin: 10px 0; }
+
+.about-left .text, .about-right .text { line-height: 18px; }
 
 
 }
