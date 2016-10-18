@@ -1783,7 +1783,7 @@ a.black-url:hover{
 .ingridient.ingridient-2 .ingridient-desc, .ingridient.ingridient-3 .ingridient-desc, .ingridient.ingridient-4 .ingridient-desc {width:50%; margin: 0}
 .ingridient.ingridient-4 { margin-left: -65%; }
 .ingridient.ingridient-3 { margin-left: -35%; }
-.ingridient.ingridient-2 { margin-left: -45%; }
+.ingridient.ingridient-2 { margin-left: -45%; margin-top: -25%; }
 
 .three-block {max-height: 600px;}
 
