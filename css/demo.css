@@ -1435,6 +1435,7 @@ a.black-url:hover{
 }
 .mbox-full.market-block{
     max-height: 100%;
+    background-color: #f8f7f5;
 }
 
 .market-img a:before {
